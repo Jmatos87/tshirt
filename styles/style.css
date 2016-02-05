@@ -1,75 +1,102 @@
 * {
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 
-body{
-	font-size:0;}
 
-h1{
-	font-size: 12px;
-	color:#47A3DA;
-	text-align: left;
-	display:inline-block;
-	vertical-align:top
-}
-h2{
-	font-size: 15px;
-	text-align:right;
-	display:inline-block;
-	vertical-align:top;
 
+body {
+	font-size: 0;
+	font-family: Arial, sans-serif;
 }
+
 #container {
-	max-width: 1200px;
-	margin:auto;
-	;
+	margin: 0 auto; /*change?*/
+	border: 1px black solid; /*remove*/
 }
 
-.merchPrice{
-	vertical-align: top;
-	display: inline-block;
-	width: 400px;
-
-}
-
-.mainBox{
+.mainBox {
 	border: 3px solid #47A3DA;
-	/* font-size: 10px; */
-	width:400px;
-}
-.optionRow{
-width:400px;
-
-
+	border-right-width: 3.1px;
+	width: 100%;
+	display: inline-block;
+	position: relative;
 }
 
-.button{
-	width: 78.9px;
-	height: 78.9px;
-	border: 1px solid #47A3DA;
-	display:inline-block;
+p {
+	font-size: 16px;
+}	
+
+			/*optionRow*/
+
+.optionRow {
+	display: inline-block;
+	width: 100%;
 }
 
-.arrows{
-
-
+.button {
+	display: inline-block;
+	width: 20%;
+	height: 30px;
+	/*background-color: teal;*//*change*/
+	border: 2px solid #47A3DA;
+	border-top-width: 3px;
+	border-bottom: 3px;
+	color: #47A3DA;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+	vertical-align: top;
 }
 
-.heart{
-
+.button:first-child {
+	border-left:none;
 }
 
-.size{
-
-
+.button:nth-child(5){
+	border-right:none;
 }
 
-.color{
 
+			/*merchPrice*/
 
+.merchPrice {
+	border-top-width: 3px solid #47A5E0;*/
+	border-left: none;
+	border-right-width: none;
+	border-bottom: none;
+	max-width: 400px;
+	width: 100%;
+	font-size: 15px;
+	vertical-align: top;
 }
 
-.cart{
+h1 {
+	width: 48%;
+	display: inline-block;
+	font-size: 16px;
+	color: #47A5E0;
+	margin-bottom: 2px;
+}
 
+h2 {
+	display: inline-block;
+	font-size: 16px; 
+	font-weight: bold;
+	width: 47%;
+	color: #47A5E0;
+	text-align: right;}
 
+.invisible {
+	display: inline-block;
+	width: 32%;
+	margin-left: 10px;
+}
+
+.cornerBox{
+	position: absolute;
+	border: 1px solid #47A5E0;
+	top:0;
+	right: 0;
+	
+	
 }
