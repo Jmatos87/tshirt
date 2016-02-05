@@ -33,13 +33,16 @@ p {
 .button {
 	display: inline-block;
 	width: 20%;
-	height: 27px;
+	height: 30px;
 	/*background-color: teal;*//*change*/
 	border: 2px solid #47A3DA;
 	border-top-width: 3px;
 	border-bottom: 3px;
 	color: #47A3DA;
 	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+	vertical-align: top;
 }
 
 .button:first-child {
@@ -69,8 +72,9 @@ h1 {
 	display: inline-block;
 	font-size: 16px; 
 	color: #47A5E0;
-	/*text-align: left;*/
-}
+	margin-bottom: 2px;
+	
+}*/
 
 h2 {
 	display: inline-block;
