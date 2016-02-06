@@ -2,13 +2,14 @@
 	box-sizing: border-box;
 }
 
+
+
 body {
 	font-size: 0;
 	font-family: Arial, sans-serif;
 }
 
 #container {
-	max-width: 1200px;
 	margin: 0 auto; /*change?*/
 	border: 1px black solid; /*remove*/
 }
@@ -16,7 +17,9 @@ body {
 .mainBox {
 	border: 3px solid #47A3DA;
 	border-right-width: 3.1px;
-	max-width: 400px;
+	width: 100%;
+	display: inline-block;
+	position: relative;
 }
 
 p {
@@ -55,9 +58,16 @@ p {
 
 
 			/*merchPrice*/
+img{
+	width:100%;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
 
 .merchPrice {
-	border-top-width: 3px solid #47A5E0; */
+	border-top-width: 3px solid #47A5E0;*/
 	border-left: none;
 	border-right-width: none;
 	border-bottom: none;
@@ -68,13 +78,12 @@ p {
 }
 
 h1 {
-	width: 50%;
+	width: 48%;
 	display: inline-block;
-	font-size: 16px; 
+	font-size: 16px;
 	color: #47A5E0;
 	margin-bottom: 2px;
-	
-}*/
+}
 
 h2 {
 	display: inline-block;
@@ -82,5 +91,48 @@ h2 {
 	font-weight: bold;
 	width: 47%;
 	color: #47A5E0;
-	text-align: right;
+	text-align: right;}
+
+.invisible {
+	display: inline-block;
+	width: 32%;
+	margin-left: 10px;
 }
+
+.cornerBox{
+	display: block;
+	margin-left:260px;
+	border: 1px solid #47A5E0;
+	height:  20px;
+	width: 27px;
+	
+
+}
+.shirtBox{
+	height: 350px;
+	position:relative;
+	transition: 3s transform ease;
+	transform-style: preserve-3d;
+}
+
+#tails {
+  transform: translateY(-50%) rotateY(180deg);
+}
+input{
+margin-left:270px;
+
+	}
+.cornerBox i{
+	position: absolute;
+	border: 1px solid #47A5E0;
+	top:0;
+	right: 0;
+	height:  20px;
+	width: 27px;
+}
+
+input[type="checkbox"]:checked ~ .shirtBox {
+  transform: rotateY(180deg);
+}
+
+
