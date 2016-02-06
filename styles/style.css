@@ -48,9 +48,14 @@ p {
 	vertical-align: top;
 }
 
+.button:hover{
+	background: #47A5E0;
+	color: white;
+
+}
+
 .button:first-child {
 	border-left:none;
-<<<<<<< HEAD
 }
 
 .button:nth-child(5){
@@ -64,6 +69,7 @@ img{
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
+	backface-visibility: hidden;
 }
 
 
@@ -103,7 +109,6 @@ h2 {
 .cornerBox{
 	display: block;
 	margin-left:260px;
-	border: 1px solid #47A5E0;
 	height:  20px;
 	width: 27px;
 	
@@ -125,20 +130,19 @@ margin-left:270px;
 	}
 .cornerBox i{
 	position: absolute;
-	border: 1px solid #47A5E0;
+	border:3px solid #47A5E0;
+	border-width:
 	top:0;
 	right: 0;
 	height:  20px;
 	width: 27px;
 }
 
-input[type="checkbox"]:checked ~ .shirtBox {
+.cornerBox:hover ~ .shirtBox {
   transform: rotateY(180deg);
 }
 
 
-
-}
 
 .button:nth-child(5){
 	border-right:none;
@@ -180,12 +184,8 @@ h2 {
 	margin-left: 10px;
 }
 
-.cornerBox{
-	position: absolute;
-	border: 1px solid #47A5E0;
-	top:0;
-	right: 0;
-	
-	
+
+.cornerBox i:hover{
+	background: #47A5E0
 }
 
