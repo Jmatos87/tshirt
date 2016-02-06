@@ -50,6 +50,7 @@ p {
 
 .button:first-child {
 	border-left:none;
+<<<<<<< HEAD
 }
 
 .button:nth-child(5){
@@ -136,3 +137,55 @@ input[type="checkbox"]:checked ~ .shirtBox {
 }
 
 
+=======
+}
+
+.button:nth-child(5){
+	border-right:none;
+}
+
+
+			/*merchPrice*/
+
+.merchPrice {
+	border-top-width: 3px solid #47A5E0;*/
+	border-left: none;
+	border-right-width: none;
+	border-bottom: none;
+	max-width: 400px;
+	width: 100%;
+	font-size: 15px;
+	vertical-align: top;
+}
+
+h1 {
+	width: 48%;
+	display: inline-block;
+	font-size: 16px;
+	color: #47A5E0;
+	margin-bottom: 2px;
+}
+
+h2 {
+	display: inline-block;
+	font-size: 16px; 
+	font-weight: bold;
+	width: 47%;
+	color: #47A5E0;
+	text-align: right;}
+
+.invisible {
+	display: inline-block;
+	width: 32%;
+	margin-left: 10px;
+}
+
+.cornerBox{
+	position: absolute;
+	border: 1px solid #47A5E0;
+	top:0;
+	right: 0;
+	
+	
+}
+>>>>>>> master
