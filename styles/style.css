@@ -9,9 +9,64 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+p {
+	font-size: 16px;
+}
+
+img{
+	width: 100%;
+	max-width: 290px;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	backface-visibility: hidden;
+	padding: 10px;
+}	
+
+h1 {
+	width: 48%;
+	display: inline-block;
+	font-size: 16px;
+	color: #47A5E0;
+	margin-bottom: 2px;
+}
+
+h2 {
+	display: inline-block;
+	font-size: 16px; 
+	font-weight: bold;
+	width: 48%;
+	color: #47A5E0;
+	text-align: right;}
+
+	input{
+margin-left:270px;
+
+	}
+
+#orange{
+	color: #FFC44F;
+}
+
+#pink{
+	color: #FF7CBF
+}
+
 #container {
-	margin: 0 auto; /*change?*/
-	border: 1px black solid; /*remove*/
+	margin: 0 auto; 
+	
+}
+
+#tails {
+  transform: translateY(-50%) rotateY(180deg);
+}
+
+.arrow{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 100px 100px 0 100px;
+border-color: #47A3DA transparent transparent transparent;
 }
 
 .mainBox {
@@ -22,9 +77,6 @@ body {
 	position: relative;
 }
 
-p {
-	font-size: 16px;
-}	
 
 			/*optionRow*/
 
@@ -37,7 +89,6 @@ p {
 	display: inline-block;
 	width: 20%;
 	height: 30px;
-	/*background-color: teal;*//*change*/
 	border: 2px solid #47A3DA;
 	border-top-width: 3px;
 	border-bottom: 3px;
@@ -63,14 +114,19 @@ p {
 }
 
 
-			/*merchPrice*/
-img{
-	width:100%;
-	top: 50%;
-	transform: translateY(-50%);
-	position: absolute;
-	backface-visibility: hidden;
+
+
+.cornerBox:hover ~ .shirtBox {
+  transform: rotateY(180deg);
 }
+
+
+.cornerBox{
+	display: block;
+	margin-left:260px;
+	height:  20px;
+	width: 27px;
+
 
 
 .merchPrice {
@@ -84,21 +140,6 @@ img{
 	vertical-align: top;
 }
 
-h1 {
-	width: 48%;
-	display: inline-block;
-	font-size: 16px;
-	color: #47A5E0;
-	margin-bottom: 2px;
-}
-
-h2 {
-	display: inline-block;
-	font-size: 16px; 
-	font-weight: bold;
-	width: 47%;
-	color: #47A5E0;
-	text-align: right;}
 
 .invisible {
 	display: inline-block;
@@ -106,28 +147,19 @@ h2 {
 	margin-left: 10px;
 }
 
-.cornerBox{
-	display: block;
-	margin-left:260px;
-	height:  20px;
-	width: 27px;
 	
 
 }
 .shirtBox{
 	height: 350px;
+	max-width: 250px;
 	position:relative;
 	transition: 3s transform ease;
 	transform-style: preserve-3d;
 }
 
-#tails {
-  transform: translateY(-50%) rotateY(180deg);
-}
-input{
-margin-left:270px;
 
-	}
+
 .cornerBox i{
 	position: absolute;
 	border:3px solid #47A5E0;
@@ -138,9 +170,7 @@ margin-left:270px;
 	width: 27px;
 }
 
-.cornerBox:hover ~ .shirtBox {
-  transform: rotateY(180deg);
-}
+
 
 
 
@@ -162,21 +192,6 @@ margin-left:270px;
 	vertical-align: top;
 }
 
-h1 {
-	width: 48%;
-	display: inline-block;
-	font-size: 16px;
-	color: #47A5E0;
-	margin-bottom: 2px;
-}
-
-h2 {
-	display: inline-block;
-	font-size: 16px; 
-	font-weight: bold;
-	width: 47%;
-	color: #47A5E0;
-	text-align: right;}
 
 .invisible {
 	display: inline-block;
@@ -189,3 +204,43 @@ h2 {
 	background: #47A5E0
 }
 
+.size img {
+	border: 3px solid #47A5E0;
+    height: 36%;
+    width: 21%;
+    position: absolute;
+    top: 75%;
+    right: 39.5%;
+    padding: 0px;
+	opacity: 0;
+	transform: 1s all ease;}
+
+.size:hover > img {
+	opacity: 1;
+}
+
+.color img {
+    border: 3px solid #47A5E0;
+    height: 14%;
+    width: 21%;
+    position: absolute;
+    top: 86%;
+    right: 19.5%;
+    opacity: 0;
+    padding: 3px;
+    transform: 1s all ease;}
+
+.color:hover > img {
+	opacity: 1;
+
+}
+
+.shirtBox img{
+	margin: auto;
+}
+
+@media only screen and (max-width:767px){
+.invisible{
+  display:block;
+  width:100%
+  }}
